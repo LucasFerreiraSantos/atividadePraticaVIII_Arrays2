@@ -1,8 +1,11 @@
 function verificarNumeroInt(){
   const numInteiros = [1, 2, 3, 4, 5, 6, 7]
-  const num = 3
-  if(numInteiros.indexOf(num)) return 'VERDADEIRO!';
-  else return 'FALSO'
+  const num = 10
+  if(numInteiros.find(e => e > num)){
+    return true
+  }else{
+    return false
+  }
 }
 
 document.write(verificarNumeroInt())
