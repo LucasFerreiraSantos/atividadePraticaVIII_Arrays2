@@ -12,9 +12,6 @@ function verificarNumPrimo(num){
       numPrimo = true
       return numPrimo
     }
-    else{
-      numPrimo = false
-    }
 }
 
 while (numerosPerfeitos.length < limite) {
@@ -25,7 +22,7 @@ while (numerosPerfeitos.length < limite) {
   num++
 }
 
-document.write(`${numerosPerfeitos.join(' ')}`)
+document.write(`${numerosPerfeitos.join('  ')}`)
 
 // 3. Desenvolva um algoritmo que preenche um vetor com os 4
 // primeiros números perfeitos.
